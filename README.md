@@ -26,21 +26,19 @@ SentimentProject/
 
 ## 🚀 4. Hướng dẫn Cài đặt & Vận hành (Quan trọng)
 
-Để chạy được đồ án, vui lòng thực hiện tuần tự **4 bước** sau trong Terminal (Command Prompt) của Visual Studio Code:
+Để chạy được đồ án, vui lòng thực hiện tuần tự **5 bước** sau trong Terminal (Command Prompt) hoặc VS Code:
 
-### Bước 1: Tạo và Kích hoạt Môi trường ảo (Virtual Environment)
-Giúp cô lập thư viện dự án, tránh xung đột với hệ thống.
-
-python -m venv venv
-venv\Scripts\activate
-👉 Dấu hiệu thành công: Đầu dòng lệnh xuất hiện chữ (venv).
-
-### Bước 2: Cài đặt thư viện phụ thuộc
+### Bước 1: Tải mã nguồn về máy
+Bạn có thể tải file ZIP hoặc dùng lệnh Git để sao chép dự án về máy:
+```bash
+git clone [https://github.com/tuansgu/final-seminar.git](https://github.com/tuansgu/final-seminar.git)
+cd final-seminar
+```
+**### Bước 2: Cài đặt thư viện phụ thuộc**
 Chạy lệnh sau để cài đặt các thư viện theo đúng phiên bản đã kiểm thử:
-
-Bash
-
+```bash
 pip install -r requirements.txt
+```
 (Lưu ý: Nếu cài thủ công, vui lòng dùng lệnh sau để tránh lỗi xung đột phiên bản: pip install streamlit transformers==4.30.0 torch==2.0.0 numpy==1.26.4 sentencepiece)
 
 ### Bước 3: Khắc phục lỗi WinError 1114 (Chỉ dành cho Windows)
@@ -51,9 +49,9 @@ DOS
 set KMP_DUPLICATE_LIB_OK=TRUE
 ### Bước 4: Khởi chạy ứng dụng
 Gõ lệnh sau để bật máy chủ Streamlit:
-
+```bash
 streamlit run app.py
-
+```
 Sau khi chạy, trình duyệt web sẽ tự động mở tại địa chỉ: http://localhost:8501. (Lưu ý: Lần chạy đầu tiên sẽ mất vài phút để tải mô hình AI về máy).
 
 ## ✨ 5. Các tính năng chính
@@ -66,5 +64,6 @@ Bảo mật: Code sử dụng kỹ thuật Parameterized Queries để chống t
 Hiệu năng cao:
 
 Sử dụng @st.cache_resource để cache mô hình vào RAM.
+
 
 Giới hạn hiển thị 50 dòng lịch sử mới nhất để tránh lag giao diện.
