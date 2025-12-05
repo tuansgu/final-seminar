@@ -34,7 +34,7 @@ Bạn có thể tải file ZIP hoặc dùng lệnh Git để sao chép dự án 
 git clone [https://github.com/tuansgu/final-seminar.git](https://github.com/tuansgu/final-seminar.git)
 cd final-seminar
 ```
-**### Bước 2: Cài đặt thư viện phụ thuộc**
+### Bước 2: Cài đặt thư viện phụ thuộc
 Chạy lệnh sau để cài đặt các thư viện theo đúng phiên bản đã kiểm thử:
 ```bash
 pip install -r requirements.txt
@@ -67,3 +67,4 @@ Sử dụng @st.cache_resource để cache mô hình vào RAM.
 
 
 Giới hạn hiển thị 50 dòng lịch sử mới nhất để tránh lag giao diện.
+
