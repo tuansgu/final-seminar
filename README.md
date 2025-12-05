@@ -31,7 +31,7 @@ SentimentProject/
 ### Bước 1: Tải mã nguồn về máy
 Bạn có thể tải file ZIP hoặc dùng lệnh Git để sao chép dự án về máy:
 ```bash
-git clone [https://github.com/tuansgu/final-seminar.git](https://github.com/tuansgu/final-seminar.git)
+git clone https://github.com/tuansgu/final-seminar.git
 cd final-seminar
 ```
 ### Bước 2: Cài đặt thư viện phụ thuộc
@@ -67,4 +67,5 @@ Sử dụng @st.cache_resource để cache mô hình vào RAM.
 
 
 Giới hạn hiển thị 50 dòng lịch sử mới nhất để tránh lag giao diện.
+
 
